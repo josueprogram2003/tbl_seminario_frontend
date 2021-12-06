@@ -1,0 +1,47 @@
+.config-nav-top {
+  height: 100%;
+  background-color: blue;
+  /* border: 1px solid black; */
+}
+
+.button {
+  background: none;
+  border: none;
+  width: 40px;
+  /* border: 1px solid black; */
+}
+
+.adra_img:hover {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  margin: 17px;
+  background: #262a34;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.568);
+}
+
+.menuperfil {
+  color: white;
+}
+
+.cerrar:hover {
+  background-color: rgba(206, 65, 22, 0.877);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.568);
+}
+
+.main-icon {
+  height: 100%;
+}
+
+.main-perfil:hover > .perfil {
+  display: block;
+  visibility: visible;
+}
+
+.icon,
+.icon-perfil {
+  color: white;
+  font-size: 30px;
+}

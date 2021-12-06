@@ -1,0 +1,19 @@
+<div class="container-fluid margenes">
+  <header class="row m-0 size1">
+    <div class="col-xl-12 p-0">
+      <ele-navtop (statusSidebar)="recibirEstado($event)"></ele-navtop>
+    </div>
+  </header>
+  <section class="row m-0 size2">
+    <div #sidebar class="col-xl-2 p-0 m-0 color">
+      <ele-nav
+        (link)="recibirLink($event)"
+        class="m-0 p-0"
+        [opened]="statusReceived"
+      ></ele-nav>
+    </div>
+    <div class="col-xl-10 main-info">
+      <ele-seminario class="h-100 w-100"></ele-seminario>
+    </div>
+  </section>
+</div>

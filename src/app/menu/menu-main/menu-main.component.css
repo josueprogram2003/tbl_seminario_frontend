@@ -1,0 +1,25 @@
+.margenes {
+  padding: 0;
+  height: 100vh;
+}
+
+.size1 {
+  height: 10%;
+}
+
+.size2 {
+  height: 90%;
+}
+
+.main-info {
+  overflow-x: auto;
+}
+
+.ocultar {
+  display: none;
+  transition: all 0.5s;
+}
+
+.color {
+  background: blue;
+}
