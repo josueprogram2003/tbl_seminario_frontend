@@ -1,2 +1,9 @@
-.main-bg {
+.icono {
+  font-size: 32px;
+  color: blue;
+}
+
+.icono:hover {
+  color: black;
+  cursor: pointer;
 }
