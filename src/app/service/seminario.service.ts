@@ -15,6 +15,8 @@ export class SeminarioService {
   urleliminar: string = 'http://localhost:9090/api/seminario/delete/';
 
   urleditar: string = 'http://localhost:9090/api/seminario/update/';
+
+  urlAsistencia: string = 'http://localhost:9090/api/asistencia/all';
   constructor(private http: HttpClient) {}
 
   getSeminario(): Observable<Seminario[]> {
@@ -38,5 +40,9 @@ export class SeminarioService {
     //    console.log(id);
     console.log(obj);
     return this.http.put(`${this.urleditar}${id}`, obj);
+  }
+
+  listarAsistencia(): Observable<any> {
+    return this.http.get<any>(this.urlAsistencia);
   }
 }

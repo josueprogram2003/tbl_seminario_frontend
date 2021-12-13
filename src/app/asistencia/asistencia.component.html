@@ -1,0 +1,20 @@
+<h1 class="text-center">Asistencia Seminario</h1>
+<table class="table table-success table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Seminario</th>
+      <th scope="col">Persona</th>
+      <th scope="col">Asistencia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let asis of asistencia; index as i">
+      <th scope="row">{{ i + 1 }}</th>
+      <td>{{ asis.nombre }}</td>
+      <td>{{ asis.no_nombre }}</td>
+      <td *ngIf="asis.estado == 1">Asistio</td>
+      <td *ngIf="asis.estado == 0">No Asistio</td>
+    </tr>
+  </tbody>
+</table>

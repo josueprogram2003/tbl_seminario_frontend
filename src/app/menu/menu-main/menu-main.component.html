@@ -12,8 +12,11 @@
         [opened]="statusReceived"
       ></ele-nav>
     </div>
-    <div class="col-xl-10 main-info">
+    <div class="col-xl-10 main-info" *ngIf="controlar == 1">
       <ele-seminario class="h-100 w-100"></ele-seminario>
+    </div>
+    <div class="col-xl-10 main-info" *ngIf="controlar == 4">
+      <ele-asistencia class="h-100 w-100"></ele-asistencia>
     </div>
   </section>
 </div>

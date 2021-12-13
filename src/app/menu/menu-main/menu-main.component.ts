@@ -13,6 +13,7 @@ import {
 })
 export class MenuMainComponent implements OnInit {
   statusReceived: boolean = true;
+  controlar: number = 0;
   UrlIframe: string = '';
   @ViewChild('marcoIframe') iframe: ElementRef | any;
   @ViewChild('sidebar') sidebar: ElementRef | any;
@@ -25,9 +26,7 @@ export class MenuMainComponent implements OnInit {
     this.statusReceived = status;
   }
 
-  recibirLink(link: string): void {
-    console.log(link);
-    const direccion = this.iframe.nativeElement;
-    this.ren2.setAttribute(direccion, 'src', link);
+  recibirLink(link: number): void {
+    this.controlar = link;
   }
 }

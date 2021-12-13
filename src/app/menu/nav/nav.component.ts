@@ -14,39 +14,19 @@ import {
   styleUrls: ['./nav.component.css'],
 })
 export class NavComponent implements OnInit {
-  @Output() link: EventEmitter<string> = new EventEmitter();
+  @Output() link: EventEmitter<number> = new EventEmitter();
   @Input() opened: boolean = true;
   estado_desplegar1: boolean = false;
   estado_desplegar2: boolean = false;
   constructor() {}
 
   ngOnInit(): void {}
-  asignar(): void {
-    this.link.emit('equipo-tecnico/asignar-banco-modulo');
-  }
-  seguimientoSocio(): void {
-    this.link.emit('asesor');
-  }
-  enviarParticipacion(): void {
-    this.link.emit('equipo-tecnico/reportes/reporte-participacion');
-  }
-  enviarParticipantes(): void {
-    this.link.emit('equipo-tecnico/reportes/reporte-participantes');
+
+  seminario() {
+    this.link.emit(1);
   }
 
-  enviarSeminario(): void {
-    this.link.emit('equipo-tecnico/reportes/reporte-seminario');
-  }
-
-  enviarBancaModulo(): void {
-    this.link.emit('equipo-tecnico/bancaModulo');
-  }
-
-  enviarControlarModulo(): void {
-    this.link.emit('equipo-tecnico/controlarModulo');
-  }
-
-  enviarCrearSeminario(): void {
-    this.link.emit('equipo-tecnico/crearSeminario');
+  asistencia() {
+    this.link.emit(4);
   }
 }
